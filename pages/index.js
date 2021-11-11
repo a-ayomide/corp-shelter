@@ -1,26 +1,29 @@
 import React from 'react'
-import makeStyles  from '@material-ui/styles/makeStyles'
+import { makeStyles } from "@material-ui/core";
+import { Typography, Container } from "@material-ui/core";
+import Layout from "../src/layouts/Layout";
+import style from '../styles/Home.module.css'
+import Hero from '../src/components/Homepage/Hero'
 
 const useStyles = makeStyles({
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap'
-  },
+
   title: {
-    fontSize: 14
+    fontSize: 14,
+    color: 'black'
   }
 })
 
-const Index = () => {
+const Home = () => {
   const classes = useStyles()
 
   return (
     <>
-     <div>
-       
-     </div>
+      <Layout />
+      <Container>
+        <Hero />
+      </Container>
     </>
   )
 }
 
-export default Index;
+export default Home;

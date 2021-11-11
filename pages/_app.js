@@ -3,7 +3,9 @@ import App  from 'next/app'
 import Head from 'next/head'
 import { MuiThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import wrapper from '../src/store'
+import wrapper from '../src/redux/store'
+import { makeStyles } from "@material-ui/core";
+import '../styles/globals.css'
 import theme from '../src/utils/theme'
 
 class _App extends App {
@@ -29,6 +31,7 @@ class _App extends App {
       pageProps,
     } = this.props
 
+
     return (
       <MuiThemeProvider theme={theme}>
         <Head>
@@ -45,4 +48,6 @@ class _App extends App {
   }
 }
 
-export default wrapper.withRedux(_App)
+// export default wrapper.withRedux(_App);
+export default _App;
+
