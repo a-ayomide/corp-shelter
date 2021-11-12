@@ -4,8 +4,9 @@
   "dependencies": {
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
-    "@mui/icons-material": "latest",
+    "@material-ui/lab": "^4.0.0-alpha.60",
     "@material-ui/styles": "latest",
+    "@mui/icons-material": "latest",
     "next": "latest",
     "next-redux-wrapper": "latest",
     "react": "^16.8.0",

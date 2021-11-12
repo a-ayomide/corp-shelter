@@ -27,6 +27,14 @@ const useStyles = makeStyles((theme) => ({
 
   navbar: {
     background: '#f2f2f2',
+    paddingTop: 10,
+    paddingBottom: 10
+
+  },
+
+  large: {
+    width: theme.spacing(6),
+    height: theme.spacing(6),
   },
 
 }));
@@ -60,7 +68,7 @@ function Appbar(props) {
                 <Typography>
                   Contact Us
                 </Typography>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
               </div>      
             </Toolbar>
           </Container>
