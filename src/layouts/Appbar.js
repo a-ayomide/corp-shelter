@@ -6,7 +6,6 @@ const useStyles = makeStyles((theme) => ({
 
   root: {
     flexGrow: 1,
-    marginTop: '10px',
   },
 
   title: {
@@ -26,9 +25,9 @@ const useStyles = makeStyles((theme) => ({
     // justifyContent: 'space-between'
   },
 
-  // navbar: {
-  //   background: '#f2f2f2',
-  // },
+  navbar: {
+    background: '#f2f2f2',
+  },
 
 }));
 
