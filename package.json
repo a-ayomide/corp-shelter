@@ -2,9 +2,10 @@
   "name": "with-redux-wrapper-and-material-ui",
   "version": "2.0.0",
   "dependencies": {
-    "@mui/material": "latest",
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
     "@mui/icons-material": "latest",
-    "@mui/styled-engine-sc": "latest",
+    "@material-ui/styles": "latest",
     "next": "latest",
     "next-redux-wrapper": "latest",
     "react": "^16.8.0",
