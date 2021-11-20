@@ -10,6 +10,7 @@ import About from '../src/components/Homepage/About'
 import Advertise from '../src/components/Homepage/Advertise'
 import Reviews from '../src/components/Homepage/Review'
 import QuestionForm from '../src/components/Homepage/QuestionForm'
+import Statistics from '../src/components/Homepage/Statistics'
 
 const useStyles = makeStyles({
 
@@ -27,6 +28,7 @@ const Home = () => {
       <Layout />
       <Container>
         <Hero />
+        <Statistics />
         <HowItWorks />
         <ListedProperties />
         <About />

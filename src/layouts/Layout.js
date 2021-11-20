@@ -1,6 +1,7 @@
 import React from 'react';
-import { makeStyles, Container } from "@material-ui/core";
-import Appbar from "./Appbar";
+import {makeStyles, Container, Hidden, CssBaseline} from "@material-ui/core";
+import AppbarDesktop from "./AppbarDesktop";
+import AppbarMobile from "./AppbarMobile";
 
 const useStyles = makeStyles({
 
@@ -12,10 +13,10 @@ function Layout({ children }) {
   return (
     <>
       <div>
-        <Appbar/>
-          <Container>
+          <CssBaseline />
+          <AppbarDesktop />
+          <Hidden xsUp><AppbarMobile/></Hidden>
               {children}
-          </Container>
       </div>
     </>
   );

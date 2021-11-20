@@ -1,128 +1,220 @@
-import React from 'react'
-import { makeStyles, Grid, Typography, Card, CardContent } from "@material-ui/core";
+import React from "react";
+import {
+  makeStyles,
+  Container,
+  Grid,
+  Typography,
+  Fab,
+  Card,
+  CardContent,
+} from "@material-ui/core";
 // import style from '../styles/Home.module.css'
-import Image from 'next/image'
-import HeroImg from '../../assets/heroImg.png'
-import signUp from '../../assets/signUp.png'
-import searchProperty from '../../assets/searchProperty.png'
-import contactLandlord from '../../assets/contactLandlord.png'
-import closeDeal from '../../assets/closeDeal.png'
-
+import Image from "next/image";
+import HeroImg from "../../assets/heroImg.png";
+import signUp from "../../assets/works1.jpeg";
+import signUp1 from "../../assets/signUp.png";
+import searchProperty from "../../assets/searchProperty.png";
+import contactLandlord from "../../assets/contactLandlord.png";
+import closeDeal from "../../assets/closeDeal.png";
+import CheckIcon from "@material-ui/icons/Check";
 
 const useStyles = makeStyles({
+  worksContainer: {
+    paddingBottom: 50,
+  },
 
-worksContainer: {
-  paddingTop: 10,
-  paddingBottom: 70,
-},
+  cardContainer: {
+    minWidth: 180,
+    maxHeight: 240,
+    paddingBottom: 270,
+  },
 
-cardContainer: {
-  minWidth: 180,
-  maxHeight: 240,
-  paddingBottom: 270,
-},
-
-aboutTextHeader1: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: 'black',
-    display: 'flex',
-    justifyContent: 'center',
+  aboutTextHeader1: {
+    fontSize: 30,
+    fontWeight: "bold",
+    color: "#022f1b",
+    textAlign: "center",
   },
 
   aboutTextHeader2: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    color: 'black',
-    display: 'flex',
-    justifyContent: 'center',
-    paddingTop: 10,
-    marginBottom: 50,
-
+    fontSize: 20,
+    color: "#808588",
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    paddingTop: 20,
   },
 
-  aboutCardText: {
+  aboutTextHeader3: {
+    fontSize: 20,
+    color: "#808588",
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    marginBottom: 50,
+  },
+
+  aboutCardText1: {
+    fontSize: 25,
+    fontWeight: "bold",
+    color: "black",
+    display: "flex",
+  },
+
+  aboutCardText2: {
     fontSize: 18,
-    fontWeight: 'bold',
-    color: 'black',
-    display: 'flex',
-    justifyContent: 'center',
+    color: "black",
+    display: "flex",
     marginTop: 20,
     marginBottom: 20,
-    paddingTop: 10
+    paddingTop: 10,
   },
 
   cardImg: {
-    display: 'flex',
-    justifyContent: 'center'
+    display: "flex",
+    justifyContent: "center",
   },
-})
+  stepsContainer: {
+    // display: 'flex',
+    // justifyContent: 'center',
+    // alignItems: 'center'
+  },
+});
 
 const HowItWorks = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <>
-      <section className={classes.worksContainer}>
-        <Typography variant="body1" className={classes.aboutTextHeader1}>
-                How it Works
-        </Typography>
-        <Typography variant="body2" className={classes.aboutTextHeader2}>
-        How Corp Shelter can help you
-        </Typography>
-        <Grid container spacing={2}>
-            <Grid item sm={3}>
-              <Card variant="outlined" className={classes.cardContainer}>
-                <CardContent>
-                  <Typography variant="body1" className={classes.aboutCardText}>
-                    Sign Up
+      <Container>
+        <section className={classes.worksContainer}>
+          <Typography variant="body1" className={classes.aboutTextHeader1}>
+            How <span style={{ color: "#89B5AF" }}> Easily </span> It Works
+          </Typography>
+          <Typography className={classes.aboutTextHeader2}>
+            How does Corp Shelter work and solve the problem of
+          </Typography>
+          <Typography className={classes.aboutTextHeader3}>
+            housing for corp members in the nation.
+          </Typography>
+          <div className={classes.stepsContainer}>
+            <Grid container spacing={3}>
+              <Grid item sm={6}>
+                <Image height={500} width={420} src={signUp}></Image>
+              </Grid>
+              <Grid
+                style={{ display: "flex", alignItems: "center" }}
+                item
+                sm={6}
+              >
+                <div>
+                  <Typography variant="h4" className={"classes.aboutCardText1"}>
+                    We are the best and most trusted housing provider for
+                    corpers
                   </Typography>
-                  <div className={classes.cardImg}>
-                    <Image src={signUp} alt="signUpImg" />
-                  </div>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item sm={3}>
-              <Card variant="outlined" className={classes.cardContainer}>
-                <CardContent>
-                  <Typography variant="body1" className={classes.aboutCardText}>
-                    Search & Evaluate property 
+                  <Typography
+                    variant="caption"
+                    component="p"
+                    className={classes.aboutCardText2}
+                  >
+                    How easily it works in 4 steps
                   </Typography>
-                  <div className={classes.cardImg}>
-                    <Image src={searchProperty} alt="searchProperty" />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <Fab
+                      style={{ backgroundColor: "#e6f5ee" }}
+                      color="primary"
+                      size="medium"
+                      disabled
+                    >
+                      <CheckIcon
+                        style={{ color: "#89B5AF" }}
+                        fontSize="large"
+                        color=""
+                      />
+                    </Fab>
+                    <Typography
+                      style={{ marginBottom: "30px", marginLeft: "10px" }}
+                      variant="caption"
+                      component="p"
+                      className={classes.aboutCardText2}
+                    >
+                      Sign Up
+                    </Typography>
                   </div>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item sm={3}>
-              <Card variant="outlined" className={classes.cardContainer}>
-                <CardContent>
-                  <Typography variant="body1" className={classes.aboutCardText}>
-                    Contact your Landlord 
-                  </Typography>
-                  <div className={classes.cardImg}>
-                    <Image src={contactLandlord} alt="contactLandlord" />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <Fab
+                      style={{ backgroundColor: "#e6f5ee" }}
+                      color="primary"
+                      size="medium"
+                      disabled
+                    >
+                      <CheckIcon
+                        style={{ color: "#89B5AF" }}
+                        fontSize="large"
+                        color=""
+                      />
+                    </Fab>
+                    <Typography
+                      style={{ marginBottom: "30px", marginLeft: "10px" }}
+                      variant="caption"
+                      component="p"
+                      className={classes.aboutCardText2}
+                    >
+                      Search and Evaluate a Property
+                    </Typography>
                   </div>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item sm={3}>
-              <Card variant="outlined" className={classes.cardContainer}>
-                <CardContent>
-                  <Typography variant="body1" className={classes.aboutCardText}>
-                    Close the deal
-                  </Typography>
-                  <div className={classes.cardImg}>
-                    <Image src={closeDeal} alt="closeDeal" />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <Fab
+                      style={{ backgroundColor: "#e6f5ee" }}
+                      color="primary"
+                      size="medium"
+                      disabled
+                    >
+                      <CheckIcon
+                        style={{ color: "#89B5AF" }}
+                        fontSize="large"
+                        color=""
+                      />
+                    </Fab>
+                    <Typography
+                      style={{ marginBottom: "30px", marginLeft: "10px" }}
+                      variant="caption"
+                      component="p"
+                      className={classes.aboutCardText2}
+                    >
+                      Contact Landlord
+                    </Typography>
                   </div>
-                </CardContent>
-              </Card>
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <Fab
+                      style={{ backgroundColor: "#e6f5ee" }}
+                      color="primary"
+                      size="medium"
+                      disabled
+                    >
+                      <CheckIcon
+                        style={{ color: "#89B5AF" }}
+                        fontSize="large"
+                        color=""
+                      />
+                    </Fab>
+                    <Typography
+                      style={{ marginBottom: "30px", marginLeft: "10px" }}
+                      variant="caption"
+                      component="p"
+                      className={classes.aboutCardText2}
+                    >
+                      Close the deal.
+                    </Typography>
+                  </div>
+                </div>
+              </Grid>
             </Grid>
-        </Grid>
-    </section >
+          </div>
+        </section>
+      </Container>
     </>
-  )
-}
+  );
+};
 
 export default HowItWorks;

@@ -11,9 +11,9 @@ aboutContainer: {
 },
 
 aboutText: {
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: 'black',
+    color: '#89B5AF',
     maxWidth: '40rem'
   },
 
@@ -21,13 +21,15 @@ aboutText: {
     fontSize: 40,
     fontWeight: 'bold',
     maxWidth: '40rem',
-    marginTop: 20
+    marginTop: 20,
+    color: '#022f1b'
   },
 
   aboutTextParagraph2: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: 'normal',
     maxWidth: '38rem',
+    color: '#808588',
     marginTop: 20
   },
 
@@ -62,12 +64,12 @@ const About = () => {
                 <Typography variant="body1" component="p" className={classes.aboutTextParagraph1}>
                     Helping Corp Members to Find Their Home.
                 </Typography>
-                <Typography variant="h6" component="p" className={classes.aboutTextParagraph2}>
+                <Typography variant="body1" component="p" className={classes.aboutTextParagraph2}>
                     On the first corps member rental network for corps members in Abuja, 
                     we're devoted to delivering digital accessibility and a flawless online experience.
                 </Typography>
                 <div className={classes.button}>
-                    <Button variant="contained" size='large' color="secondary">Know more</Button>
+                    <Button style={{backgroundColor: '#89B5AF', color: 'white'}} variant="contained" size='large'>Know more</Button>
                 </div>
             </Grid>
         </Grid>

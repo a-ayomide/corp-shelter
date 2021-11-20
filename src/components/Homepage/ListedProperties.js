@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles, Grid, Typography, Button, Card, CardActionArea, CardMedia, CardContent } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Button, Card, CardActionArea, CardMedia, CardContent, Paper } from "@material-ui/core";
 // import style from '../styles/Home.module.css'
 import Image from 'next/image'
 import propImg from '../../assets/propImage.png'
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
         display: 'flex',
         justifyContent: 'center',
         fontWeight: 'bold',
-        color: 'black',
+        color: '#022f1b',
   },
 
     buttonsContainer: {
@@ -50,18 +50,18 @@ const ListedProperties = () => {
         <div className={classes.buttonsContainer}>
             <Grid container spacing={6}>
                 <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30 }} color="secondary">Free Apartments</Button>
+                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
                 </Grid>
                 <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30 }} color="secondary">Free Apartments</Button>
+                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
                 </Grid>
                 <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30 }} color="secondary">Free Apartments</Button>
+                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
                 </Grid>
                 <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30 }} color="secondary">Free Apartments</Button>
+                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
                 </Grid>
-                <Grid item style={{display: 'flex',alignItems: 'center'}}>
+                <Grid item style={{display: 'flex',alignItems: 'center', color: '#89B5AF'}}>
                     <Typography> Explore all &#8594;</Typography>
                 </Grid>
             </Grid>
@@ -69,7 +69,7 @@ const ListedProperties = () => {
         <div>
             <Grid className={classes.carouselContainer} spacing={5}>
                 <Grid item>
-                    <Card className={classes.root}>
+                    <Card elevation={0} className={classes.root}>
                         <CardActionArea>
                             <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
                             <CardContent>
@@ -87,12 +87,12 @@ const ListedProperties = () => {
                     </Card>
                 </Grid>
                 <Grid item>
-                    <Card className={classes.root}>
+                    <Card elevation={0} className={classes.root}>
                         <CardActionArea>
                             <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
                             <CardContent>
                             <Typography variant="body2" color="" component="p">
-                                Available
+                                Available at Utako
                             </Typography>
                             <Typography variant="body2" color="" component="p">
                                 Self Contain
@@ -105,12 +105,12 @@ const ListedProperties = () => {
                     </Card>
                 </Grid>
                 <Grid item>
-                    <Card className={classes.root}>
+                    <Card elevation={0} className={classes.root}>
                         <CardActionArea>
                             <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
                             <CardContent>
                             <Typography variant="body2" color="" component="p">
-                                Available
+                                Available at Utako
                             </Typography>
                             <Typography variant="body2" color="" component="p">
                                 Self Contain
@@ -123,12 +123,12 @@ const ListedProperties = () => {
                     </Card>
                 </Grid>
                 <Grid item>
-                    <Card className={classes.root}>
+                    <Card elevation={0} className={classes.root}>
                         <CardActionArea>
                             <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
                             <CardContent>
                             <Typography variant="body2" color="" component="p">
-                                Available
+                            Available at Utako
                             </Typography>
                             <Typography variant="body2" color="" component="p">
                                 Self Contain
@@ -141,14 +141,14 @@ const ListedProperties = () => {
                     </Card>
                 </Grid>
                 <Grid item>
-                    <Card className={classes.root}>
+                    <Card elevation={0} className={classes.root}>
                         <CardActionArea>
                             <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
                             <CardContent>
-                            <Typography variant="body2" color="" component="p">
-                                Available
+                            <Typography variant="body2" component="p">
+                            Available at Utako
                             </Typography>
-                            <Typography variant="body2" color="" component="p">
+                            <Typography variant="body2" component="p">
                                 Self Contain
                             </Typography>
                             <Typography variant="body2" color="" component="p">

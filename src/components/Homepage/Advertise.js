@@ -21,14 +21,16 @@ aboutText: {
     fontSize: 40,
     fontWeight: 'bold',
     maxWidth: '40rem',
-    marginTop: 20
+    marginTop: 20,
+    color: '#022f1b'
   },
 
   aboutTextParagraph2: {
-    fontSize: 22,
+    fontSize: 20,
     fontWeight: 'normal',
     maxWidth: '38rem',
-    marginTop: 20
+    marginTop: 20,
+    color: '#808588',
   },
 
   button: {
@@ -52,7 +54,7 @@ const Advertise = () => {
                 You'll find one that suits your style among the vast majority of listings.
                 </Typography>
                 <div className={classes.button}>
-                    <Button style={{paddingTop: 10, paddingBottom: 10}} variant="contained" size='large' color="secondary">Advertise a property</Button>
+                    <Button style={{paddingTop: 10, paddingBottom: 10, backgroundColor: '#89B5AF', color: 'white'}} variant="contained" size='large'>Advertise a property</Button>
                 </div>
                      
             </Grid>
