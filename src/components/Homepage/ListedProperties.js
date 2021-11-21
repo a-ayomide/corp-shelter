@@ -1,169 +1,257 @@
-import React from 'react'
-import { makeStyles, Grid, Typography, Button, Card, CardActionArea, CardMedia, CardContent, Paper } from "@material-ui/core";
+import React from "react";
+import {
+  makeStyles,
+  Grid,
+  Typography,
+  Button,
+  Card,
+  CardActionArea,
+  CardMedia,
+  Container,
+  CardContent,
+  Paper,
+} from "@material-ui/core";
 // import style from '../styles/Home.module.css'
-import Image from 'next/image'
-import propImg from '../../assets/propImage.png'
+import Image from "next/image";
+import propImg from "../../assets/propImage.png";
 
 const useStyles = makeStyles({
-
-    propContainer: {
-        marginTop: 40,
-        paddingTop: 10,
-        paddingBottom: 70,
-    },
-
-    propHeaderText: {
-        fontSize: 30,
-        display: 'flex',
-        justifyContent: 'center',
-        fontWeight: 'bold',
-        color: '#022f1b',
+  propContainer: {
+    paddingTop: 50,
+    paddingBottom: 70,
+    backgroundColor: "white",
   },
 
-    buttonsContainer: {
-        marginTop: 40,
-    },
+  propHeaderText: {
+    fontSize: 30,
+    display: "flex",
+    justifyContent: "center",
+    fontWeight: "bold",
+    color: "#022f1b",
+  },
 
-    root: {
-        maxWidth: 250,
-        borderRadius: 5
-    },
-    
-    carouselContainer: {
-        marginTop: 40,
-        display: 'flex',
-        gap: 20
+  buttonsContainer: {
+    marginTop: 40,
+  },
 
-    }
+  root: {
+    maxWidth: 250,
+    borderRadius: 5,
+  },
 
-})
+  carouselContainer: {
+    marginTop: 40,
+    display: "flex",
+    gap: 20,
+  },
+});
 
 const ListedProperties = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <>
-    <section className={classes.propContainer}>
-        <Typography variant="h2" className={classes.propHeaderText}>
+      <section className={classes.propContainer}>
+        <Container maxWidth="lg">
+          <Typography variant="h2" className={classes.propHeaderText}>
             Listed Apartments
-        </Typography>
-        <div className={classes.buttonsContainer}>
+          </Typography>
+          <div className={classes.buttonsContainer}>
             <Grid container spacing={6}>
-                <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
-                </Grid>
-                <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
-                </Grid>
-                <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
-                </Grid>
-                <Grid item >
-                    <Button variant="contained" size='large' component="button" style={{paddingRight: 30, paddingLeft: 30, backgroundColor: '#89B5AF', color: 'white' }}>Free Apartments</Button>
-                </Grid>
-                <Grid item style={{display: 'flex',alignItems: 'center', color: '#89B5AF'}}>
-                    <Typography> Explore all &#8594;</Typography>
-                </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  size="large"
+                  component="button"
+                  disableElevation
+                  style={{
+                    paddingRight: 30,
+                    paddingLeft: 30,
+                    backgroundColor: "#29a43a",
+                    color: "white",
+                  }}
+                >
+                  Free Apartments
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  size="large"
+                  component="button"
+                  disableElevation
+                  style={{
+                    paddingRight: 30,
+                    paddingLeft: 30,
+                    backgroundColor: "#29a43a",
+                    color: "white",
+                  }}
+                >
+                  Free Apartments
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  size="large"
+                  component="button"
+                  disableElevation
+                  style={{
+                    paddingRight: 30,
+                    paddingLeft: 30,
+                    backgroundColor: "#29a43a",
+                    color: "white",
+                  }}
+                >
+                  Free Apartments
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  size="large"
+                  disableElevation
+                  component="button"
+                  style={{
+                    paddingRight: 30,
+                    paddingLeft: 30,
+                    backgroundColor: "#29a43a",
+                    color: "white",
+                  }}
+                >
+                  Free Apartments
+                </Button>
+              </Grid>
+              <Grid
+                item
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  color: "#29a43a",
+                }}
+              >
+                <Typography> Explore all &#8594;</Typography>
+              </Grid>
             </Grid>
-        </div>
-        <div>
+          </div>
+          <div>
             <Grid className={classes.carouselContainer} spacing={5}>
-                <Grid item>
-                    <Card elevation={0} className={classes.root}>
-                        <CardActionArea>
-                            <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
-                            <CardContent>
-                            <Typography variant="body2" color="" component="p">
-                                Available
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                Self Contain
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                #300, 000 per annnum
-                            </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </Grid>
-                <Grid item>
-                    <Card elevation={0} className={classes.root}>
-                        <CardActionArea>
-                            <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
-                            <CardContent>
-                            <Typography variant="body2" color="" component="p">
-                                Available at Utako
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                Self Contain
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                #300, 000 per annnum
-                            </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </Grid>
-                <Grid item>
-                    <Card elevation={0} className={classes.root}>
-                        <CardActionArea>
-                            <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
-                            <CardContent>
-                            <Typography variant="body2" color="" component="p">
-                                Available at Utako
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                Self Contain
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                #300, 000 per annnum
-                            </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </Grid>
-                <Grid item>
-                    <Card elevation={0} className={classes.root}>
-                        <CardActionArea>
-                            <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
-                            <CardContent>
-                            <Typography variant="body2" color="" component="p">
-                            Available at Utako
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                Self Contain
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                #300, 000 per annnum
-                            </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </Grid>
-                <Grid item>
-                    <Card elevation={0} className={classes.root}>
-                        <CardActionArea>
-                            <Image className={classes.cardImg} src={propImg} alt="property image"></Image>
-                            <CardContent>
-                            <Typography variant="body2" component="p">
-                            Available at Utako
-                            </Typography>
-                            <Typography variant="body2" component="p">
-                                Self Contain
-                            </Typography>
-                            <Typography variant="body2" color="" component="p">
-                                #300, 000 per annnum
-                            </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </Grid>
+              <Grid item>
+                <Card elevation={0} className={classes.root}>
+                  <CardActionArea>
+                    <Image
+                      className={classes.cardImg}
+                      src={propImg}
+                      alt="property image"
+                    ></Image>
+                    <CardContent>
+                      <Typography variant="body2" color="" component="p">
+                        Available
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        Self Contain
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        #300, 000 per annnum
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+              <Grid item>
+                <Card elevation={0} className={classes.root}>
+                  <CardActionArea>
+                    <Image
+                      className={classes.cardImg}
+                      src={propImg}
+                      alt="property image"
+                    ></Image>
+                    <CardContent>
+                      <Typography variant="body2" color="" component="p">
+                        Available at Utako
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        Self Contain
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        #300, 000 per annnum
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+              <Grid item>
+                <Card elevation={0} className={classes.root}>
+                  <CardActionArea>
+                    <Image
+                      className={classes.cardImg}
+                      src={propImg}
+                      alt="property image"
+                    ></Image>
+                    <CardContent>
+                      <Typography variant="body2" color="" component="p">
+                        Available at Utako
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        Self Contain
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        #300, 000 per annnum
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+              <Grid item>
+                <Card elevation={0} className={classes.root}>
+                  <CardActionArea>
+                    <Image
+                      className={classes.cardImg}
+                      src={propImg}
+                      alt="property image"
+                    ></Image>
+                    <CardContent>
+                      <Typography variant="body2" color="" component="p">
+                        Available at Utako
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        Self Contain
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        #300, 000 per annnum
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
+              <Grid item>
+                <Card elevation={0} className={classes.root}>
+                  <CardActionArea>
+                    <Image
+                      className={classes.cardImg}
+                      src={propImg}
+                      alt="property image"
+                    ></Image>
+                    <CardContent>
+                      <Typography variant="body2" component="p">
+                        Available at Utako
+                      </Typography>
+                      <Typography variant="body2" component="p">
+                        Self Contain
+                      </Typography>
+                      <Typography variant="body2" color="" component="p">
+                        #300, 000 per annnum
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Grid>
             </Grid>
-        </div>
-        
-    </section>
+          </div>
+        </Container>
+      </section>
     </>
-  )
-}
+  );
+};
 
 export default ListedProperties;

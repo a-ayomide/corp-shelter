@@ -1,23 +1,21 @@
-import React from 'react';
-import {makeStyles, Container, Hidden, CssBaseline} from "@material-ui/core";
+import React from "react";
+import { makeStyles, Container, Hidden } from "@material-ui/core";
 import AppbarDesktop from "./AppbarDesktop";
 import AppbarMobile from "./AppbarMobile";
+import Footer from "./Footer";
 
-const useStyles = makeStyles({
-
-})
-
+const useStyles = makeStyles({});
 
 function Layout({ children }) {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <>
-      <div>
-          <CssBaseline />
-          <AppbarDesktop />
-          <Hidden xsUp><AppbarMobile/></Hidden>
-              {children}
-      </div>
+      <AppbarDesktop />
+      {/* <Hidden xsUp>
+          <AppbarMobile />
+        </Hidden> */}
+      <main>{children}</main>
+      <Footer />
     </>
   );
 }

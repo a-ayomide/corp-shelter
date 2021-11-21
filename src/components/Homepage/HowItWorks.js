@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 // import style from '../styles/Home.module.css'
 import Image from "next/image";
-import HeroImg from "../../assets/heroImg.png";
+// import HeroImg from "../../assets/heroImg.png";
 import signUp from "../../assets/works1.jpeg";
 import signUp1 from "../../assets/signUp.png";
 import searchProperty from "../../assets/searchProperty.png";
@@ -21,6 +21,7 @@ import CheckIcon from "@material-ui/icons/Check";
 const useStyles = makeStyles({
   worksContainer: {
     paddingBottom: 50,
+    backgroundColor: "white",
   },
 
   cardContainer: {
@@ -86,10 +87,10 @@ const HowItWorks = () => {
 
   return (
     <>
-      <Container>
-        <section className={classes.worksContainer}>
+      <section className={classes.worksContainer}>
+        <Container>
           <Typography variant="body1" className={classes.aboutTextHeader1}>
-            How <span style={{ color: "#89B5AF" }}> Easily </span> It Works
+            How <span style={{ color: "#29a43a" }}> Easily </span> It Works
           </Typography>
           <Typography className={classes.aboutTextHeader2}>
             How does Corp Shelter work and solve the problem of
@@ -127,7 +128,7 @@ const HowItWorks = () => {
                       disabled
                     >
                       <CheckIcon
-                        style={{ color: "#89B5AF" }}
+                        style={{ color: "#29a43a" }}
                         fontSize="large"
                         color=""
                       />
@@ -149,7 +150,7 @@ const HowItWorks = () => {
                       disabled
                     >
                       <CheckIcon
-                        style={{ color: "#89B5AF" }}
+                        style={{ color: "#29a43a" }}
                         fontSize="large"
                         color=""
                       />
@@ -171,7 +172,7 @@ const HowItWorks = () => {
                       disabled
                     >
                       <CheckIcon
-                        style={{ color: "#89B5AF" }}
+                        style={{ color: "#29a43a" }}
                         fontSize="large"
                         color=""
                       />
@@ -193,7 +194,7 @@ const HowItWorks = () => {
                       disabled
                     >
                       <CheckIcon
-                        style={{ color: "#89B5AF" }}
+                        style={{ color: "#29a43a" }}
                         fontSize="large"
                         color=""
                       />
@@ -211,8 +212,8 @@ const HowItWorks = () => {
               </Grid>
             </Grid>
           </div>
-        </section>
-      </Container>
+        </Container>
+      </section>
     </>
   );
 };
