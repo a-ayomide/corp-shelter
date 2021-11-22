@@ -11,7 +11,6 @@ import Advertise from "../src/components/Homepage/Advertise";
 import Reviews from "../src/components/Homepage/Review";
 import QuestionForm from "../src/components/Homepage/QuestionForm";
 import Statistics from "../src/components/Homepage/Statistics";
-import Footer from "../src/layouts/Footer";
 
 const useStyles = makeStyles({
   title: {
