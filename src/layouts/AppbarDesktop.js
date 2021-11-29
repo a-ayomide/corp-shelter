@@ -71,7 +71,7 @@ function Appbar(props) {
                 <Typography>Contact Us</Typography>
                 <Avatar
                   alt="Remy Sharp"
-                  src={avatarImg}
+                  src="avatarImg"
                   className={classes.large}
                 />
               </div>

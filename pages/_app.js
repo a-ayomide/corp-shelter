@@ -30,7 +30,6 @@ class _App extends App {
 
   render() {
     const { Component, pageProps } = this.props;
-
     return (
       <MuiThemeProvider theme={theme}>
         <Head>

@@ -2,48 +2,46 @@ import React from "react";
 import {
   makeStyles,
   Typography,
-  TextField,
+  Card,
   useTheme,
-  Grid,
+  Box,
+  TextField,
   FormHelperText,
+  Button,
   Container,
 } from "@material-ui/core";
 import Layout from "../src/layouts/Layout";
-// import LoginImg from "../src/assets/works4.jpeg";
 import LoginImg from "../public/reviewImg.png";
 import Image from "next/image";
 
 const useStyles = makeStyles((theme) => ({
   loginContainer: {
-    minHeight: "100vh",
     display: "flex",
+    minHeight: "60vh",
+    alignItems: "center",
     flexDirection: "column",
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   formContainer: {
-    // [theme.breakpoints.up("sm")]: {
-    //   //   backgroundColor: "black",
-    // },
     display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    maxWidth: "90%",
-    backgroundColor: "black",
-    // maxHeight: "70%",
-    minHeight: "100vh",
-    marginRight: "auto",
-    marginLeft: "auto",
-    // backgroundColor: "#1f1f1f",
-  },
-  form: {
-    "& > *": {
-      width: "45ch",
-    },
-    display: "flex",
-    // flexDirection: "column",
+    // justifyContent: "center",
+    // backgroundColor: "#808588",
     alignItems: "center",
     justifyContent: "center",
+    // border: "30px",
+    // borderColor: "#808588",
+    marginTop: "auto",
+    marginBottom: "auto",
+  },
+  formfields: {
+    [theme.breakpoints.up("sm")]: {
+      width: "600px",
+    },
+    width: "300px",
+    display: "flex",
+    flexDirection: "column",
+    "& > *": {
+      margin: theme.spacing(1.5),
+    },
   },
 }));
 
@@ -52,34 +50,60 @@ const Login = () => {
   const classes = useStyles();
   return (
     <>
-      <Container maxWidth="lg">
-        <div className={classes.loginContainer}>
-          <h1>Corp Shelter</h1>
-          <Grid direction="column" container spacing={6}>
-            <Grid item sm={6} xs={12}>
-              <div style={{}} className={classes.formContainer}>
-                <h2>Login</h2>
-                <form action="" className={classes.form}>
+      <Layout>
+        <Container maxWidth="lg">
+          <Card variant="outlined" className={classes.loginContainer}>
+            <Box
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+              width="75%"
+              className={classes.formContainer}
+            >
+              <Typography style={{ textAlign: "center", fontSize: "30px" }}>
+                Sign In
+              </Typography>
+              <Box>
+                <form
+                  className={classes.formfields}
+                  // style={{ width: "100%" }}
+                >
                   <TextField
                     id="outlined-basic"
-                    label="Email Address"
+                    label="Email or Username"
                     variant="outlined"
+                    margin="dense"
                   />
                   <TextField
                     id="outlined-basic"
                     label="Password"
                     variant="outlined"
+                    margin="dense"
                   />
+                  <Box
+                    style={{ display: "flex", justifyContent: "space-between" }}
+                  >
+                    <Typography>
+                      Don't have an account?{" "}
+                      <span style={{ color: "#29a43a" }}>Register Now!</span>
+                    </Typography>
+                    <Button
+                      style={{
+                        width: "100px",
+                        backgroundColor: "#29a43a",
+                        color: "white",
+                      }}
+                    >
+                      Sign In
+                    </Button>
+                  </Box>
                 </form>
-              </div>
-            </Grid>
-            <Grid item sm={6}>
-              {/* <Image src={LoginImg}></Image> */}
-              Tuhgbvgfydcvebiufbvytecvbuj
-            </Grid>
-          </Grid>
-        </div>
-      </Container>
+              </Box>
+            </Box>
+          </Card>
+        </Container>
+      </Layout>
     </>
   );
 };
