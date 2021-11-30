@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Register = () => {
+const Profile = () => {
   const theme = useTheme();
   const classes = useStyles();
   return (
@@ -180,4 +180,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Profile;

@@ -6,7 +6,6 @@ import {
   useTheme,
   Box,
   TextField,
-  FormHelperText,
   Button,
   Container,
 } from "@material-ui/core";
@@ -17,7 +16,7 @@ import Image from "next/image";
 const useStyles = makeStyles((theme) => ({
   loginContainer: {
     display: "flex",
-    minHeight: "60vh",
+    minHeight: "100vh",
     alignItems: "center",
     flexDirection: "column",
   },
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     // justifyContent: "center",
     // backgroundColor: "#808588",
     alignItems: "center",
-    justifyContent: "center",
+    // justifyContent: "center",
     // border: "30px",
     // borderColor: "#808588",
     marginTop: "auto",
@@ -61,7 +60,13 @@ const Login = () => {
               width="75%"
               className={classes.formContainer}
             >
-              <Typography style={{ textAlign: "center", fontSize: "30px" }}>
+              <Typography
+                style={{
+                  textAlign: "center",
+                  fontSize: "30px",
+                  marginBottom: 10,
+                }}
+              >
                 Sign In
               </Typography>
               <Box>
@@ -73,16 +78,20 @@ const Login = () => {
                     id="outlined-basic"
                     label="Email or Username"
                     variant="outlined"
-                    margin="dense"
+                    // margin="dense"
                   />
                   <TextField
                     id="outlined-basic"
                     label="Password"
                     variant="outlined"
-                    margin="dense"
+                    // margin="dense"
                   />
                   <Box
-                    style={{ display: "flex", justifyContent: "space-between" }}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
                   >
                     <Typography>
                       Don't have an account?{" "}

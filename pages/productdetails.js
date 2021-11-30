@@ -9,6 +9,7 @@ import {
   AccordionSummary,
   AccordionDetails,
   Card,
+  TextField,
   Box,
   CardActions,
   Button,
@@ -99,6 +100,16 @@ function ProductDetails() {
                     </div>
 
                     <Typography className={classes.pos} color="textSecondary">
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
+                      adjective adjective adjective adjective adjective
                       adjective adjective adjective adjective adjective
                       adjective adjective adjective adjective adjective
                       adjective adjective adjective adjective adjective
@@ -272,7 +283,9 @@ function ProductDetails() {
                 </Card>
               </Grid>
             </Grid>
-            <Accordion style={{ marginTop: 30 }}>
+            <Accordion
+              style={{ marginTop: 30, paddingLeft: 40, paddingRight: 40 }}
+            >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -292,10 +305,54 @@ function ProductDetails() {
                 {/* <Box component="fieldset" borderColor="transparent"> */}
                 <Rating name="read-only" readOnly />
                 {/* </Box> */}
-
-                <Grid container>
-                  <Grid item></Grid>
-                </Grid>
+                <Box style={{ marginTop: 20, marginBottom: 40 }}>
+                  <Grid container spacing={3}>
+                    <Grid item sm={6}>
+                      <TextField
+                        style={{ width: "100%" }}
+                        id="outlined-basic"
+                        placeholder="Full Name"
+                        variant="outlined"
+                        // margin="dense"
+                      />
+                    </Grid>
+                    <Grid item sm={6}>
+                      <TextField
+                        style={{ width: "100%" }}
+                        id="outlined-basic"
+                        placeholder="Email Address"
+                        variant="outlined"
+                        // margin="dense"
+                      />
+                    </Grid>
+                  </Grid>
+                  <Grid container style={{ marginTop: 30 }}>
+                    <Grid item sm={12}>
+                      <TextField
+                        style={{ width: "100%" }}
+                        id="outlined-basic"
+                        placeholder="Write a Message"
+                        variant="outlined"
+                        multiline
+                        rows={10}
+                        // margin="dense"
+                      />
+                    </Grid>
+                    <Grid item sm={12}>
+                      <Button
+                        style={{
+                          float: "right",
+                          backgroundColor: "#29a43a",
+                          color: "white",
+                          marginTop: 30,
+                        }}
+                        size="large"
+                      >
+                        Contact Agent
+                      </Button>
+                    </Grid>
+                  </Grid>
+                </Box>
               </AccordionDetails>
             </Accordion>
           </Container>
