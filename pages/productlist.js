@@ -11,7 +11,7 @@ import {
   Box,
 } from "@material-ui/core";
 import Layout from "../src/layouts/Layout";
-import ProductFilter from "../src/components/ProductList/ProductFilter";
+import ProductFilter from "../src/components/Product/ProductFilter";
 import Image from "next/image";
 import propImg from "../src/assets/propImage.png";
 

@@ -137,7 +137,7 @@ const ListedProperties = () => {
           <div>
             <Grid className={classes.carouselContainer} spacing={5}>
               <Grid item>
-                <Card elevation={0} className={classes.root}>
+                <Card variant="outlined" elevation={0} className={classes.root}>
                   <CardActionArea>
                     <Image
                       className={classes.cardImg}
@@ -159,7 +159,7 @@ const ListedProperties = () => {
                 </Card>
               </Grid>
               <Grid item>
-                <Card elevation={0} className={classes.root}>
+                <Card variant="outlined" elevation={0} className={classes.root}>
                   <CardActionArea>
                     <Image
                       className={classes.cardImg}
@@ -181,7 +181,7 @@ const ListedProperties = () => {
                 </Card>
               </Grid>
               <Grid item>
-                <Card elevation={0} className={classes.root}>
+                <Card variant="outlined" elevation={0} className={classes.root}>
                   <CardActionArea>
                     <Image
                       className={classes.cardImg}
@@ -203,7 +203,7 @@ const ListedProperties = () => {
                 </Card>
               </Grid>
               <Grid item>
-                <Card elevation={0} className={classes.root}>
+                <Card variant="outlined" elevation={0} className={classes.root}>
                   <CardActionArea>
                     <Image
                       className={classes.cardImg}
@@ -225,7 +225,7 @@ const ListedProperties = () => {
                 </Card>
               </Grid>
               <Grid item>
-                <Card elevation={0} className={classes.root}>
+                <Card variant="outlined" elevation={0} className={classes.root}>
                   <CardActionArea>
                     <Image
                       className={classes.cardImg}
