@@ -9,14 +9,24 @@ import {
   Button,
   Container,
 } from "@material-ui/core";
-import Layout from "../src/layouts/Layout";
 import LoginImg from "../public/reviewImg.png";
 import Image from "next/image";
+import Layout from "../src/layouts/Layout";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: "white",
+    paddingTop: 90,
+    paddingBottom: 90,
+  },
   loginContainer: {
     display: "flex",
-    minHeight: "100vh",
+    minHeight: "60vh",
+    minWidth: "50vh",
+    paddingTop: 50,
+    paddingBottom: 50,
+    maxWidth: 600,
+    justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
   },
@@ -50,68 +60,81 @@ const Login = () => {
   return (
     <>
       <Layout>
-        <Container maxWidth="lg">
-          <Card variant="outlined" className={classes.loginContainer}>
+        <div className={classes.root}>
+          <Container maxWidth="lg">
             <Box
               style={{
                 display: "flex",
                 flexDirection: "column",
+                alignItems: "center",
               }}
-              width="75%"
-              className={classes.formContainer}
             >
-              <Typography
-                style={{
-                  textAlign: "center",
-                  fontSize: "30px",
-                  marginBottom: 10,
-                }}
-              >
-                Sign In
-              </Typography>
-              <Box>
-                <form
-                  className={classes.formfields}
-                  // style={{ width: "100%" }}
+              <Card variant="outlined" className={classes.loginContainer}>
+                <Box
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                  width="100%"
+                  className={classes.formContainer}
                 >
-                  <TextField
-                    id="outlined-basic"
-                    label="Email or Username"
-                    variant="outlined"
-                    // margin="dense"
-                  />
-                  <TextField
-                    id="outlined-basic"
-                    label="Password"
-                    variant="outlined"
-                    // margin="dense"
-                  />
-                  <Box
+                  <Typography
                     style={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "space-between",
+                      textAlign: "center",
+                      fontSize: "30px",
+                      marginBottom: 10,
                     }}
                   >
-                    <Typography>
-                      Don't have an account?{" "}
-                      <span style={{ color: "#29a43a" }}>Register Now!</span>
-                    </Typography>
-                    <Button
-                      style={{
-                        width: "100px",
-                        backgroundColor: "#29a43a",
-                        color: "white",
-                      }}
+                    Sign In
+                  </Typography>
+                  <Box>
+                    <form
+                      className={classes.formfields}
+                      // style={{ width: "100%" }}
                     >
-                      Sign In
-                    </Button>
+                      <TextField
+                        id="outlined-basic"
+                        label="Email or Username"
+                        variant="outlined"
+                        margin="dense"
+                      />
+                      <TextField
+                        id="outlined-basic"
+                        label="Password"
+                        variant="outlined"
+                        margin="dense"
+                      />
+                      <Box
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-between",
+                        }}
+                      >
+                        <Typography>
+                          Don't have an account?{" "}
+                          <span style={{ color: "#29a43a" }}>
+                            Register Now!
+                          </span>
+                        </Typography>
+                        <Button
+                          style={{
+                            width: "100px",
+                            height: "45px",
+                            backgroundColor: "#29a43a",
+                            color: "white",
+                          }}
+                        >
+                          Sign In
+                        </Button>
+                      </Box>
+                    </form>
                   </Box>
-                </form>
-              </Box>
+                </Box>
+              </Card>
             </Box>
-          </Card>
-        </Container>
+          </Container>
+        </div>
       </Layout>
     </>
   );

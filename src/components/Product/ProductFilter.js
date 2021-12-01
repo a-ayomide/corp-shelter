@@ -5,6 +5,7 @@ import {
   Grid,
   Button,
   FormControl,
+  MenuItem,
   InputLabel,
   Select,
 } from "@material-ui/core";
@@ -23,6 +24,7 @@ const useStyles = makeStyles(() => ({
 
 function ProductFilter() {
   const classes = useStyles();
+  const [state, setState] = React.useState("");
 
   return (
     <>
@@ -48,26 +50,53 @@ function ProductFilter() {
               </FormControl>
             </Grid>
             <Grid item sm={3} xs={12}>
-              <FormControl variant="outlined" className={classes.formControl}>
-                <Select
-                  // style={{ maxWidth: "600px" }}
-                  labelId="Location"
-                  label="Location"
-                ></Select>
-              </FormControl>
-            </Grid>
-            <Grid item sm={3} xs={12}>
-              <FormControl variant="outlined" className={classes.formControl}>
+              <FormControl
+                variant="outlined"
+                style={{ width: "100%" }}
+                className={classes.formControl}
+              >
                 <InputLabel id="demo-simple-select-outlined-label">
-                  Age
+                  State of Residence
                 </InputLabel>
                 <Select
                   labelId="demo-simple-select-outlined-label"
                   id="demo-simple-select-outlined"
-                  // value={age}
-                  // onChange={handleChange}
-                  placeholder="Age"
-                ></Select>
+                  value={state}
+                  onChange={handleChange}
+                  label="State of Residence"
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem value={10}>Abia</MenuItem>
+                  <MenuItem value={20}>Anambra</MenuItem>
+                  <MenuItem value={30}>Adamawa</MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item sm={3} xs={12}>
+              <FormControl
+                variant="outlined"
+                style={{ width: "100%" }}
+                className={classes.formControl}
+              >
+                <InputLabel id="demo-simple-select-outlined-label">
+                  State
+                </InputLabel>
+                <Select
+                  labelId="demo-simple-select-outlined-label"
+                  id="demo-simple-select-outlined"
+                  value={state}
+                  onChange={handleChange}
+                  label="State of Residence"
+                >
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <MenuItem value={10}>Abia</MenuItem>
+                  <MenuItem value={20}>Anambra</MenuItem>
+                  <MenuItem value={30}>Adamawa</MenuItem>
+                </Select>
               </FormControl>
             </Grid>
             <Grid item sm={3} xs={6}>

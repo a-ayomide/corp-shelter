@@ -9,10 +9,11 @@ import {
 } from "@material-ui/core";
 import Layout from "../../src/layouts/Layout";
 import Sidebar from "../../src/components/Settings/Sidebar";
+import DashboardContent from "../../src/components/Settings/DashboardContent";
 
 const useStyles = makeStyles((theme) => ({
   profileContainer: {
-    minHeight: "80vh",
+    minHeight: "90vh",
   },
   formfields: {
     [theme.breakpoints.up("sm")]: {
@@ -36,11 +37,13 @@ const Profile = () => {
       <Layout>
         <Container maxWidth="lg">
           <div className={classes.profileContainer}>
-            <Grid container>
-              <Grid item>
+            <Grid container spacing={3}>
+              <Grid item xs={12} sm={3}>
                 <Sidebar />
               </Grid>
-              <Grid item></Grid>
+              <Grid item xs={12} sm={9}>
+                <DashboardContent />
+              </Grid>
             </Grid>
           </div>
         </Container>

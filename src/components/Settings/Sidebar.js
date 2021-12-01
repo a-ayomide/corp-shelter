@@ -1,21 +1,21 @@
 import React from "react";
-import { makeStyles, useTheme, Paper, Card, Box } from "@material-ui/core";
+import { makeStyles, useTheme, Card, Box, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   sidebarContainer: {
     maxWidth: "500px",
-    maxHeight: "500px",
+    // maxHeight: "500px",
   },
   root: {
     display: "flex",
     flexWrap: "wrap",
-    borderColor: "gray",
-    borderWidth: "1px",
-    borderStyle: "solid",
+    // borderColor: "gray",
+    // borderWidth: "1px",
+    // borderStyle: "solid",
     "& > *": {
-      margin: theme.spacing(1),
-      width: theme.spacing(50),
-      height: theme.spacing(100),
+      // margin: theme.spacing(1),
+      width: theme.spacing(40),
+      height: theme.spacing(80),
     },
   },
 
@@ -39,7 +39,55 @@ const Sidebar = () => {
   return (
     <>
       <Box className={classes.root}>
-        <Box className={{ width: "400px" }}>Cardbduc</Box>
+        <Card>
+          <Box
+            style={{
+              height: "60px",
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 30,
+              borderBottom: "1px solid #F3F3F3",
+            }}
+          >
+            <span style={{ fontSize: 35, marginRight: 10, color: "#29a43a" }}>
+              &lt;
+            </span>
+            <Typography> Settings</Typography>
+          </Box>
+          <Box
+            style={{
+              height: "60px",
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 30,
+              borderBottom: "1px solid #F3F3F3",
+            }}
+          >
+            <Typography>Personal details</Typography>
+          </Box>
+          <Box
+            style={{
+              height: "60px",
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 30,
+              borderBottom: "1px solid #F3F3F3",
+            }}
+          >
+            <Typography>Property Lists</Typography>
+          </Box>
+          <Box
+            style={{
+              height: "60px",
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 30,
+              borderBottom: "1px solid #F3F3F3",
+            }}
+          >
+            <Typography>Post a Property</Typography>
+          </Box>
+        </Card>
       </Box>
     </>
   );
