@@ -123,7 +123,7 @@ const Reviews = () => {
                     mb={3}
                     borderColor="transparent"
                   >
-                    <Rating name="read-only" value={value} readOnly />
+                    <Rating name="read-only" value={5} readOnly />
                   </Box>
                 </CardContent>
               </Card>
@@ -165,7 +165,7 @@ const Reviews = () => {
                     mb={3}
                     borderColor="transparent"
                   >
-                    <Rating name="read-only" value={value} readOnly />
+                    <Rating name="read-only" value={5} readOnly />
                   </Box>
                 </CardContent>
               </Card>
@@ -207,7 +207,7 @@ const Reviews = () => {
                     mb={3}
                     borderColor="transparent"
                   >
-                    <Rating name="read-only" value={value} readOnly />
+                    <Rating name="read-only" value={5} readOnly />
                   </Box>
                 </CardContent>
               </Card>

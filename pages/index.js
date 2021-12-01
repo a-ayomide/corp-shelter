@@ -26,8 +26,8 @@ const Home = () => {
     <>
       <Layout>
         <Hero />
-        <Statistics />
         <HowItWorks />
+        <Statistics />
         <ListedProperties />
         <About />
         <Advertise />

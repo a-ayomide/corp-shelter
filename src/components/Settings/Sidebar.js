@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexWrap: "wrap",
-    borderColor: "green",
-    borderWidth: "2px",
+    borderColor: "gray",
+    borderWidth: "1px",
     borderStyle: "solid",
     "& > *": {
       margin: theme.spacing(1),

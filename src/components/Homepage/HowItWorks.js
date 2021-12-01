@@ -20,7 +20,8 @@ import CheckIcon from "@material-ui/icons/Check";
 
 const useStyles = makeStyles({
   worksContainer: {
-    paddingBottom: 50,
+    paddingBottom: 70,
+    paddingTop: 70,
     backgroundColor: "white",
   },
 

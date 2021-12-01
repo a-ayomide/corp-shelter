@@ -14,6 +14,7 @@ import {
 // import style from '../styles/Home.module.css'
 import Image from "next/image";
 import propImg from "../../assets/propImage.png";
+import Link from "next/link";
 
 const useStyles = makeStyles({
   propContainer: {
@@ -130,7 +131,14 @@ const ListedProperties = () => {
                   color: "#29a43a",
                 }}
               >
-                <Typography> Explore all &#8594;</Typography>
+                <Link href="/productlist">
+                  <Button>
+                    <Typography style={{ color: "#29a43a" }}>
+                      {" "}
+                      Explore all &#8594;
+                    </Typography>
+                  </Button>
+                </Link>
               </Grid>
             </Grid>
           </div>

@@ -8,7 +8,6 @@ const useStyles = makeStyles({
     paddingBottom: 60,
     paddingLeft: 35,
     paddingRight: 35,
-    backgroundColor: "white",
   },
 
   statisticsContainer: {

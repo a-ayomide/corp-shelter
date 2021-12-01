@@ -37,7 +37,7 @@ function ProductFilter() {
               alignItems: "center",
             }}
           >
-            <Grid item sm={3} xs={6}>
+            <Grid item sm={3} xs={12}>
               <FormControl variant="outlined" className={classes.formControl}>
                 <Select
                   // style={{ maxWidth: "600px" }}
@@ -47,7 +47,7 @@ function ProductFilter() {
                 ></Select>
               </FormControl>
             </Grid>
-            <Grid item sm={3} xs={6}>
+            <Grid item sm={3} xs={12}>
               <FormControl variant="outlined" className={classes.formControl}>
                 <Select
                   // style={{ maxWidth: "600px" }}
@@ -56,7 +56,7 @@ function ProductFilter() {
                 ></Select>
               </FormControl>
             </Grid>
-            <Grid item sm={3} xs={6}>
+            <Grid item sm={3} xs={12}>
               <FormControl variant="outlined" className={classes.formControl}>
                 <InputLabel id="demo-simple-select-outlined-label">
                   Age
@@ -66,12 +66,17 @@ function ProductFilter() {
                   id="demo-simple-select-outlined"
                   // value={age}
                   // onChange={handleChange}
-                  label="Age"
+                  placeholder="Age"
                 ></Select>
               </FormControl>
             </Grid>
             <Grid item sm={3} xs={6}>
-              <Button disableElevation size="large" variant="contained">
+              <Button
+                style={{ backgroundColor: "#29a43a", color: "white" }}
+                disableElevation
+                size="large"
+                variant="contained"
+              >
                 Search
               </Button>
             </Grid>
