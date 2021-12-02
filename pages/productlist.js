@@ -36,15 +36,7 @@ function ProductList() {
             <h2 style={{ fontSize: 25 }}>
               Search for Available accommodations at any location of your choice
             </h2>
-            <Box
-              style={
-                {
-                  // display: "flex",
-                  // justifyContent: "space-between",
-                  // alignItems: "center",
-                }
-              }
-            >
+            <Box>
               <ProductFilter />
             </Box>
 
