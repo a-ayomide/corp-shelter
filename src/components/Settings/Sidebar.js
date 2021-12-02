@@ -1,5 +1,6 @@
 import React from "react";
 import { makeStyles, useTheme, Card, Box, Typography } from "@material-ui/core";
+import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
   sidebarContainer: {
@@ -9,28 +10,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexWrap: "wrap",
-    // borderColor: "gray",
-    // borderWidth: "1px",
-    // borderStyle: "solid",
     "& > *": {
       // margin: theme.spacing(1),
       width: theme.spacing(40),
       height: theme.spacing(80),
     },
   },
-
-  //   formfields: {
-  //     [theme.breakpoints.up("sm")]: {
-  //       width: "600px",
-  //     },
-  //     width: "300px",
-  //     display: "flex",
-  //     alignItems: "center",
-  //     flexDirection: "column",
-  //     "& > *": {
-  //       margin: theme.spacing(1.5),
-  //     },
-  //   },
 }));
 
 const Sidebar = () => {
@@ -43,6 +28,7 @@ const Sidebar = () => {
           <Box
             style={{
               height: "60px",
+              cursor: "pointer",
               display: "flex",
               alignItems: "center",
               paddingLeft: 30,
@@ -54,19 +40,40 @@ const Sidebar = () => {
             </span>
             <Typography> Settings</Typography>
           </Box>
+          <Link href="/settings/personalDetails" passHref>
+            <Box
+              style={{
+                height: "60px",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: 30,
+                borderBottom: "1px solid #F3F3F3",
+              }}
+            >
+              <Typography>Personal details</Typography>
+            </Box>
+          </Link>
+
+          <Link href="/settings/postProperty" passHref>
+            <Box
+              style={{
+                height: "60px",
+                cursor: "pointer",
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: 30,
+                borderBottom: "1px solid #F3F3F3",
+              }}
+            >
+              <Typography>Post a Property</Typography>
+            </Box>
+          </Link>
+
+          {/* <Link href="/settings/propertyLists" passHref> */}
           <Box
             style={{
-              height: "60px",
-              display: "flex",
-              alignItems: "center",
-              paddingLeft: 30,
-              borderBottom: "1px solid #F3F3F3",
-            }}
-          >
-            <Typography>Personal details</Typography>
-          </Box>
-          <Box
-            style={{
+              cursor: "pointer",
               height: "60px",
               display: "flex",
               alignItems: "center",
@@ -76,17 +83,7 @@ const Sidebar = () => {
           >
             <Typography>Property Lists</Typography>
           </Box>
-          <Box
-            style={{
-              height: "60px",
-              display: "flex",
-              alignItems: "center",
-              paddingLeft: 30,
-              borderBottom: "1px solid #F3F3F3",
-            }}
-          >
-            <Typography>Post a Property</Typography>
-          </Box>
+          {/* </Link> */}
         </Card>
       </Box>
     </>

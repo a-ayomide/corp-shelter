@@ -65,7 +65,7 @@ const Hero = () => {
     <>
       <section className={classes.heroContainer}>
         <Container disableGutters maxWidth="xl">
-          <Grid container="xl">
+          <Grid>
             <Grid item sm={6}>
               <div className={classes.heroTextContainer}>
                 <Typography variant="h2" className={classes.heroText}>
@@ -99,9 +99,9 @@ const Hero = () => {
               </div>
             </Grid>
             <Grid item sm={6}>
-              <div className={classes.imgContainer}>
-                {/* <Image  src={HeroImg} /> */}
-              </div>
+              {/* <div className={classes.imgContainer}> */}
+              {/* <Image src={HeroImg} /> */}
+              {/* </div> */}
             </Grid>
           </Grid>
         </Container>

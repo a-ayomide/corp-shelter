@@ -131,7 +131,7 @@ const ListedProperties = () => {
                   color: "#29a43a",
                 }}
               >
-                <Link href="/productlist">
+                <Link href="/productlist" passHref>
                   <Button>
                     <Typography style={{ color: "#29a43a" }}>
                       {" "}

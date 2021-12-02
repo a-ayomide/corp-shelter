@@ -9,7 +9,8 @@ import {
 } from "@material-ui/core";
 import Layout from "../../src/layouts/Layout";
 import Sidebar from "../../src/components/Settings/Sidebar";
-import DashboardContent from "../../src/components/Settings/DashboardContent";
+import PersonalDetails from "../../src/components/Settings/PersonalDetails";
+import AddProperty from "../../src/components/Settings/AddProperty";
 
 const useStyles = makeStyles((theme) => ({
   profileContainer: {
@@ -29,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Profile = () => {
+const PostProperty = () => {
   const theme = useTheme();
   const classes = useStyles();
   return (
@@ -42,7 +43,7 @@ const Profile = () => {
                 <Sidebar />
               </Grid>
               <Grid item xs={12} sm={9}>
-                <DashboardContent />
+                <AddProperty />
               </Grid>
             </Grid>
           </div>
@@ -52,4 +53,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default PostProperty;

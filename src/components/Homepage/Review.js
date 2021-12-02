@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   reviewTextHeader1: {
     fontSize: 20,
     fontWeight: "bold",
-    color: "black",
+    color: "#29a43a",
     display: "flex",
     justifyContent: "center",
   },

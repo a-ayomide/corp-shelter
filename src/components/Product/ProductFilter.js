@@ -26,6 +26,10 @@ function ProductFilter() {
   const classes = useStyles();
   const [state, setState] = React.useState("");
 
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+
   return (
     <>
       <div className={classes.FilterContainer}>

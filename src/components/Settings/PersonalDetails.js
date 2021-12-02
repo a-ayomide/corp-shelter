@@ -32,19 +32,6 @@ const useStyles = makeStyles((theme) => ({
     // margin: theme.spacing(1),
     // minWidth: 200,
   },
-
-  //   formfields: {
-  //     [theme.breakpoints.up("sm")]: {
-  //       width: "600px",
-  //     },
-  //     width: "300px",
-  //     display: "flex",
-  //     alignItems: "center",
-  //     flexDirection: "column",
-  //     "& > *": {
-  //       margin: theme.spacing(1.5),
-  //     },
-  //   },
 }));
 
 const Sidebar = () => {
@@ -87,7 +74,7 @@ const Sidebar = () => {
             </Box>
             <Box style={{ marginTop: 10 }}>
               <Grid container direction="row" spacing={2}>
-                <Grid item sm={6} xs={12}>
+                <Grid item sm={4} xs={12}>
                   <TextField
                     style={{ width: "100%" }}
                     id="outlined-basic"
@@ -96,11 +83,20 @@ const Sidebar = () => {
                     // margin="dense"
                   />
                 </Grid>
-                <Grid item sm={6} xs={12}>
+                <Grid item sm={4} xs={12}>
                   <TextField
                     style={{ width: "100%" }}
                     id="outlined-basic"
-                    label="Phone Number"
+                    label="Mobile Number"
+                    variant="outlined"
+                    // margin="dense"
+                  />
+                </Grid>
+                <Grid item sm={4} xs={12}>
+                  <TextField
+                    style={{ width: "100%" }}
+                    id="outlined-basic"
+                    label="Whatsapp"
                     variant="outlined"
                     // margin="dense"
                   />
@@ -196,20 +192,29 @@ const Sidebar = () => {
               <Typography>Social Profile</Typography>
               <Box style={{ marginTop: 10 }}>
                 <Grid container direction="row" spacing={2}>
-                  <Grid item sm={6} xs={12}>
+                  <Grid item sm={4} xs={12}>
                     <TextField
                       style={{ width: "100%" }}
                       id="outlined-basic"
-                      label="Facebook Url"
+                      label="Facebook Profile"
                       variant="outlined"
                       // margin="dense"
                     />
                   </Grid>
-                  <Grid item sm={6} xs={12}>
+                  <Grid item sm={4} xs={12}>
                     <TextField
                       style={{ width: "100%" }}
                       id="outlined-basic"
-                      label="Instagram Url"
+                      label="Twitter Profile"
+                      variant="outlined"
+                      // margin="dense"
+                    />
+                  </Grid>
+                  <Grid item sm={4} xs={12}>
+                    <TextField
+                      style={{ width: "100%" }}
+                      id="outlined-basic"
+                      label="Instagram Profile"
                       variant="outlined"
                       // margin="dense"
                     />
@@ -217,7 +222,20 @@ const Sidebar = () => {
                 </Grid>
               </Box>
             </Box>
-            <Button>UPDATE PROFILE</Button>
+            <Button
+              style={{
+                backgroundColor: "#29a43a",
+                color: "white",
+                marginTop: 20,
+                paddingTop: 10,
+                paddingBottom: 10,
+                marginBottom: 20,
+                float: "right",
+              }}
+              variant="contained"
+            >
+              UPDATE PROFILE
+            </Button>
           </Box>
         </Card>
       </Box>
