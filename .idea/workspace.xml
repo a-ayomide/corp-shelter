@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07374326-3363-4e62-acc6-4ac774256648" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/productlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/productlist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductList/ProductFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductList/ProductFilter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="07374326-3363-4e62-acc6-4ac774256648" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637747668143</updated>
       <workItem from="1637747670290" duration="27000" />
+      <workItem from="1638628856903" duration="77000" />
     </task>
     <servers />
   </component>
