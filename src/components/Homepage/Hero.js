@@ -11,6 +11,7 @@ import {
   FormControl,
 } from "@material-ui/core";
 import Image from "next/image";
+import Link from "next/link";
 import HeroImg from "../../assets/houseImg.png";
 import * as url from "url";
 import "../../../styles/Hero.module.css";
@@ -23,9 +24,9 @@ const useStyles = makeStyles({
     // flexDirection: "column",
     alignItems: "center",
   },
-  // imgContainer: {
-  //   marginTop: "-150px",
-  // },
+  imgContainer: {
+    marginTop: "-150px",
+  },
   heroTextContainer: {
     paddingLeft: "120px",
     // display: "flex",
@@ -66,7 +67,7 @@ const Hero = () => {
       <section className={classes.heroContainer}>
         <Container disableGutters maxWidth="xl">
           <Grid>
-            <Grid item sm={6}>
+            <Grid item md={6}>
               <div className={classes.heroTextContainer}>
                 <Typography variant="h2" className={classes.heroText}>
                   Find a <span style={{ color: "#29a43a" }}>Perfect</span> place
@@ -77,31 +78,35 @@ const Hero = () => {
                   based on original images, evaluations, and insights.
                 </Typography>
                 <div style={{ display: "flex", marginTop: 20 }}>
-                  <Button
-                    variant="contained"
-                    size="large"
-                    disableElevation
-                    className={classes.button}
-                  >
-                    {" "}
-                    Sign Up{" "}
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    size="large"
-                    disableElevation
-                    className={classes.button2}
-                  >
-                    {" "}
-                    Sign In{" "}
-                  </Button>
+                  <Link href="/register" passHref>
+                    <Button
+                      variant="contained"
+                      size="large"
+                      disableElevation
+                      className={classes.button}
+                    >
+                      {" "}
+                      Sign Up{" "}
+                    </Button>
+                  </Link>
+                  <Link href="/login" passHref>
+                    <Button
+                      variant="outlined"
+                      size="large"
+                      disableElevation
+                      className={classes.button2}
+                    >
+                      {" "}
+                      Sign In{" "}
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Grid>
-            <Grid item sm={6}>
-              {/* <div className={classes.imgContainer}> */}
-              {/* <Image src={HeroImg} /> */}
-              {/* </div> */}
+            <Grid item md={6}>
+              <div className={classes.imgContainer}>
+                {/* <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" /> */}
+              </div>
             </Grid>
           </Grid>
         </Container>

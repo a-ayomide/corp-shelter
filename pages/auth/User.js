@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const PostProperty = () => {
+const user = () => {
   const theme = useTheme();
   const classes = useStyles();
   return (
@@ -43,7 +43,8 @@ const PostProperty = () => {
                 <Sidebar />
               </Grid>
               <Grid item xs={12} sm={9}>
-                <AddProperty />
+                <PersonalDetails />
+                {/* <AddProperty /> */}
               </Grid>
             </Grid>
           </div>
@@ -53,4 +54,4 @@ const PostProperty = () => {
   );
 };
 
-export default PostProperty;
+export default user;

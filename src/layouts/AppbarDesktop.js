@@ -75,7 +75,11 @@ function Appbar(props) {
                   <Typography>Post an advert</Typography>
                   <Typography>About Us</Typography>
                   <Typography>Contact Us</Typography>
-                  <Link href="/settings/personalDetails" passHref>
+                  <Link
+                    href="/auth/user
+                  "
+                    passHref
+                  >
                     <Box style={{ cursor: "pointer" }}>
                       <Avatar
                         alt="Remy Sharp"

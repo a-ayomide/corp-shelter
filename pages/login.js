@@ -9,8 +9,8 @@ import {
   Button,
   Container,
 } from "@material-ui/core";
-import LoginImg from "../public/reviewImg.png";
-import Image from "next/image";
+// import LoginImg from "../public/reviewImg.png";
+// import Image from "next/image";
 import Layout from "../src/layouts/Layout";
 
 const useStyles = makeStyles((theme) => ({

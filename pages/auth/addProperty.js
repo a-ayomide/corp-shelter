@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const personaldetails = () => {
+const addProperty = () => {
   const theme = useTheme();
   const classes = useStyles();
   return (
@@ -43,8 +43,7 @@ const personaldetails = () => {
                 <Sidebar />
               </Grid>
               <Grid item xs={12} sm={9}>
-                <PersonalDetails />
-                {/* <AddProperty /> */}
+                <AddProperty />
               </Grid>
             </Grid>
           </div>
@@ -54,4 +53,4 @@ const personaldetails = () => {
   );
 };
 
-export default personaldetails;
+export default addProperty;

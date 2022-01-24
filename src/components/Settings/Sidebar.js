@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles, useTheme, Card, Box, Typography } from "@material-ui/core";
 import Link from "next/link";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const useStyles = makeStyles((theme) => ({
   sidebarContainer: {
@@ -36,11 +37,11 @@ const Sidebar = () => {
             }}
           >
             <span style={{ fontSize: 35, marginRight: 10, color: "#29a43a" }}>
-              &lt;
+              <ArrowBackIcon />
             </span>
             <Typography> Settings</Typography>
           </Box>
-          <Link href="/settings/personalDetails" passHref>
+          <Link href="/auth/User" passHref>
             <Box
               style={{
                 height: "60px",
@@ -55,7 +56,7 @@ const Sidebar = () => {
             </Box>
           </Link>
 
-          <Link href="/settings/postProperty" passHref>
+          <Link href="/auth/addProperty" passHref>
             <Box
               style={{
                 height: "60px",
@@ -70,20 +71,20 @@ const Sidebar = () => {
             </Box>
           </Link>
 
-          {/* <Link href="/settings/propertyLists" passHref> */}
-          <Box
-            style={{
-              cursor: "pointer",
-              height: "60px",
-              display: "flex",
-              alignItems: "center",
-              paddingLeft: 30,
-              borderBottom: "1px solid #F3F3F3",
-            }}
-          >
-            <Typography>Property Lists</Typography>
-          </Box>
-          {/* </Link> */}
+          <Link href="/auth/userProperties" passHref>
+            <Box
+              style={{
+                cursor: "pointer",
+                height: "60px",
+                display: "flex",
+                alignItems: "center",
+                paddingLeft: 30,
+                borderBottom: "1px solid #F3F3F3",
+              }}
+            >
+              <Typography>Property Lists</Typography>
+            </Box>
+          </Link>
         </Card>
       </Box>
     </>

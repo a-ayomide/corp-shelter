@@ -39,7 +39,6 @@ function ProductList() {
             <Box>
               <ProductFilter />
             </Box>
-
             <div>
               <Grid container className={classes.carouselContainer} spacing={5}>
                 <Grid item sm={3}>
