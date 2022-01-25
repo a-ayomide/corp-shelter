@@ -145,114 +145,144 @@ const ListedProperties = () => {
           <div>
             <Grid className={classes.carouselContainer} spacing={5}>
               <Grid item>
-                <Card variant="outlined" elevation={0} className={classes.root}>
-                  <CardActionArea>
-                    <Image
-                      className={classes.cardImg}
-                      src={propImg}
-                      alt="property image"
-                    ></Image>
-                    <CardContent>
-                      <Typography variant="body2" color="" component="p">
-                        Available
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        Self Contain
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        #300, 000 per annnum
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                <Link href="/productdetails" passHref>
+                  <Card
+                    variant="outlined"
+                    elevation={0}
+                    className={classes.root}
+                  >
+                    <CardActionArea>
+                      <Image
+                        className={classes.cardImg}
+                        src={propImg}
+                        alt="property image"
+                      ></Image>
+                      <CardContent>
+                        <Typography variant="body2" color="" component="p">
+                          Available
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          Self Contain
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          #300, 000 per annnum
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
               <Grid item>
-                <Card variant="outlined" elevation={0} className={classes.root}>
-                  <CardActionArea>
-                    <Image
-                      className={classes.cardImg}
-                      src={propImg}
-                      alt="property image"
-                    ></Image>
-                    <CardContent>
-                      <Typography variant="body2" color="" component="p">
-                        Available at Utako
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        Self Contain
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        #300, 000 per annnum
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                <Link href="/productdetails" passHref>
+                  <Card
+                    variant="outlined"
+                    elevation={0}
+                    className={classes.root}
+                  >
+                    <CardActionArea>
+                      <Image
+                        className={classes.cardImg}
+                        src={propImg}
+                        alt="property image"
+                      ></Image>
+                      <CardContent>
+                        <Typography variant="body2" color="" component="p">
+                          Available at Utako
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          Self Contain
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          #300, 000 per annnum
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
               <Grid item>
-                <Card variant="outlined" elevation={0} className={classes.root}>
-                  <CardActionArea>
-                    <Image
-                      className={classes.cardImg}
-                      src={propImg}
-                      alt="property image"
-                    ></Image>
-                    <CardContent>
-                      <Typography variant="body2" color="" component="p">
-                        Available at Utako
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        Self Contain
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        #300, 000 per annnum
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                <Link href="/productdetails" passHref>
+                  <Card
+                    variant="outlined"
+                    elevation={0}
+                    className={classes.root}
+                  >
+                    <CardActionArea>
+                      <Image
+                        className={classes.cardImg}
+                        src={propImg}
+                        alt="property image"
+                      ></Image>
+                      <CardContent>
+                        <Typography variant="body2" color="" component="p">
+                          Available at Utako
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          Self Contain
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          #300, 000 per annnum
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
               <Grid item>
-                <Card variant="outlined" elevation={0} className={classes.root}>
-                  <CardActionArea>
-                    <Image
-                      className={classes.cardImg}
-                      src={propImg}
-                      alt="property image"
-                    ></Image>
-                    <CardContent>
-                      <Typography variant="body2" color="" component="p">
-                        Available at Utako
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        Self Contain
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        #300, 000 per annnum
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                <Link href="/productdetails" passHref>
+                  <Card
+                    variant="outlined"
+                    elevation={0}
+                    className={classes.root}
+                  >
+                    <CardActionArea>
+                      <Image
+                        className={classes.cardImg}
+                        src={propImg}
+                        alt="property image"
+                      ></Image>
+                      <CardContent>
+                        <Typography variant="body2" color="" component="p">
+                          Available at Utako
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          Self Contain
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          #300, 000 per annnum
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
               <Grid item>
-                <Card variant="outlined" elevation={0} className={classes.root}>
-                  <CardActionArea>
-                    <Image
-                      className={classes.cardImg}
-                      src={propImg}
-                      alt="property image"
-                    ></Image>
-                    <CardContent>
-                      <Typography variant="body2" component="p">
-                        Available at Utako
-                      </Typography>
-                      <Typography variant="body2" component="p">
-                        Self Contain
-                      </Typography>
-                      <Typography variant="body2" color="" component="p">
-                        #300, 000 per annnum
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                </Card>
+                <Link href="/productdetails" passHref>
+                  <Card
+                    variant="outlined"
+                    elevation={0}
+                    className={classes.root}
+                  >
+                    <CardActionArea>
+                      <Image
+                        className={classes.cardImg}
+                        src={propImg}
+                        alt="property image"
+                      ></Image>
+                      <CardContent>
+                        <Typography variant="body2" component="p">
+                          Available at Utako
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                          Self Contain
+                        </Typography>
+                        <Typography variant="body2" color="" component="p">
+                          #300, 000 per annnum
+                        </Typography>
+                      </CardContent>
+                    </CardActionArea>
+                  </Card>
+                </Link>
               </Grid>
             </Grid>
           </div>
