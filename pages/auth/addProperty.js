@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  makeStyles,
-  useTheme,
-  Container,
-  Grid,
-  Card,
-  Paper,
-} from "@material-ui/core";
+import { useTheme, Container, Grid, Card, Paper } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import Layout from "../../src/layouts/Layout";
 import Sidebar from "../../src/components/Settings/Sidebar";
 import PersonalDetails from "../../src/components/Settings/PersonalDetails";
@@ -31,7 +25,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const addProperty = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const theme = useTheme();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const classes = useStyles();
   return (
     <>

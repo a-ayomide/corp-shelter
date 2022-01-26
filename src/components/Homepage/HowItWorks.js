@@ -102,7 +102,12 @@ const HowItWorks = () => {
           <div className={classes.stepsContainer}>
             <Grid container spacing={3}>
               <Grid item sm={6}>
-                <Image height={500} width={420} src={signUp}></Image>
+                <Image
+                  alt="signup"
+                  height={500}
+                  width={420}
+                  src={signUp}
+                ></Image>
               </Grid>
               <Grid
                 style={{ display: "flex", alignItems: "center" }}

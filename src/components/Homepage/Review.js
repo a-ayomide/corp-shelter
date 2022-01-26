@@ -94,7 +94,7 @@ const Reviews = () => {
               >
                 <CardContent>
                   <Typography variant="body2" className={classes.reviewText}>
-                    "Very understanding house owners"
+                    &quot;Very understanding house owners&quot;
                   </Typography>
                   <div className={classes.profileContainer}>
                     <Avatar
@@ -136,7 +136,7 @@ const Reviews = () => {
               >
                 <CardContent>
                   <Typography variant="body2" className={classes.reviewText}>
-                    "Very understanding house owners"
+                    &quot;Very understanding house owners&quot;
                   </Typography>
                   <div className={classes.profileContainer}>
                     <Avatar
@@ -178,7 +178,7 @@ const Reviews = () => {
               >
                 <CardContent>
                   <Typography variant="body2" className={classes.reviewText}>
-                    "Very understanding house owners"
+                    &quot;Very understanding house owners&quot;
                   </Typography>
                   <div className={classes.profileContainer}>
                     <Avatar

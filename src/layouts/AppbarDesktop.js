@@ -8,7 +8,7 @@ import {
   Container,
   Avatar,
 } from "@material-ui/core";
-import avatarImg from "../../public/reviewImg.png";
+// import avatarImg from "../../public/reviewImg.png";
 import Link from "next/link";
 
 const useStyles = makeStyles((theme) => ({
@@ -75,15 +75,11 @@ function Appbar(props) {
                   <Typography>Post an advert</Typography>
                   <Typography>About Us</Typography>
                   <Typography>Contact Us</Typography>
-                  <Link
-                    href="/auth/user
-                  "
-                    passHref
-                  >
+                  <Link href="/auth/user" passHref>
                     <Box style={{ cursor: "pointer" }}>
                       <Avatar
                         alt="Remy Sharp"
-                        src={avatarImg}
+                        // src={avatarImg}
                         className={classes.large}
                       />
                     </Box>

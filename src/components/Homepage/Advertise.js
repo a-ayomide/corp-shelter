@@ -65,8 +65,8 @@ const Advertise = () => {
                 className={classes.aboutTextParagraph2}
               >
                 Choose from over 1,000 self-contained units, BQs, and other
-                rental properties. You'll find one that suits your style among
-                the vast majority of listings.
+                rental properties. You&apos;ll find one that suits your style
+                among the vast majority of listings.
               </Typography>
               <div className={classes.button}>
                 <Button

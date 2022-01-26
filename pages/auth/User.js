@@ -31,7 +31,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const user = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const theme = useTheme();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const classes = useStyles();
   return (
     <>

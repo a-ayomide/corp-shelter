@@ -83,8 +83,8 @@ const About = () => {
                 className={classes.aboutTextParagraph2}
               >
                 On the first corps member rental network for corps members in
-                Abuja, we're devoted to delivering digital accessibility and a
-                flawless online experience.
+                Abuja, we&apos;re devoted to delivering digital accessibility
+                and a flawless online experience.
               </Typography>
               <div className={classes.button}>
                 <Button

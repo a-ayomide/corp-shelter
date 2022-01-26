@@ -112,7 +112,7 @@ const Login = () => {
                         }}
                       >
                         <Typography>
-                          Don't have an account?{" "}
+                          Don&apos;t have an account?{" "}
                           <span style={{ color: "#29a43a" }}>
                             Register Now!
                           </span>

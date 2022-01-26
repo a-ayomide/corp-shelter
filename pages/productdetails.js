@@ -238,7 +238,7 @@ function ProductDetails() {
                     >
                       Suggested Properties
                     </Typography>
-                    <Image src={propImg}></Image>
+                    <Image alt="property" src={propImg}></Image>
                   </CardContent>
                 </Card>
                 <Card
@@ -264,7 +264,7 @@ function ProductDetails() {
                     >
                       Abby Corper
                     </Typography>
-                    <Image src={propImg}></Image>
+                    <Image alt="agent" src={propImg}></Image>
                     <div style={{ display: "flex", justifyContent: "center" }}>
                       <CardActions>
                         <Button
